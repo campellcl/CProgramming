@@ -1,0 +1,33 @@
+10:59:29 **** Build of configuration Debug for project ProgrammingCPractice ****
+make all 
+Building file: ../datatypes.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"datatypes.d" -MT"datatypes.d" -o "datatypes.o" "../datatypes.c"
+Finished building: ../datatypes.c
+ 
+Building file: ../printBits.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"printBits.d" -MT"printBits.d" -o "printBits.o" "../printBits.c"
+../printBits.c: In function 'printBin':
+../printBits.c:77:3: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [enabled by default]
+   printf(binNum / (i * 10));
+   ^
+In file included from /usr/include/stdio.h:29:0,
+                 from ../printBits.c:1:
+/usr/include/stdio.h:177:5: note: expected 'const char *' but argument is of type 'int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../printBits.c: In function 'padBits':
+../printBits.c:67:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../printBits.c
+ 
+Building target: ProgrammingCPractice.exe
+Invoking: Cygwin C Linker
+gcc  -o "ProgrammingCPractice.exe"  ./datatypes.o ./printBits.o   
+Finished building target: ProgrammingCPractice.exe
+ 
+10:59:41 **** Incremental Build of configuration Debug for project ProgrammingCPractice ****
+make all 
+make: Nothing to be done for 'all'.
